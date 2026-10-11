@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunlight - Revolutionizing Neighborhood Deliveries</title>
+    <style>
+        :root {
+            --primary-color: #f39c12;
+            --secondary-color: #2c3e50;
+            --accent-color: #e67e22;
+            --light-bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -30px auto 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.8rem;
+            border-bottom: 3px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: #4a5568;
+        }
+
+        .problem-statement {
+            background-color: #fffaf0;
+            border-left: 5px solid var(--primary-color);
+            padding: 20px;
+            border-radius: 6px;
+            margin: 25px 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .service-item {
+            background: #fdfdfd;
+            border: 1px solid #edf2f7;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .service-title {
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            padding: 16px 24px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.25s ease, transform 0.15s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-support {
+            background-color: #3498db;
+        }
+        .btn-support:hover {
+            background-color: #2980b9;
+        }
+
+        .btn-delete {
+            background-color: #e74c3c;
+        }
+        .btn-delete:hover {
+            background-color: #c0392b;
+        }
+
+        .btn-general {
+            background-color: #2ecc71;
+        }
+        .btn-general:hover {
+            background-color: #27ae60;
+        }
+
+        .safety-section {
+            background-color: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 25px;
+        }
+
+        .safety-section ul {
+            padding-left: 20px;
+            color: #4a5568;
+        }
+
+        .safety-section li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #718096;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sunlight</h1>
+    <p>Connecting Neighborhoods • Eliminating Noise • Smart Daily Deliveries</p>
+</header>
+
+<div class="container">
+
+    <!-- ABOUT US SECTION -->
+    <div class="card">
+        <h2>About Sunlight</h2>
+        <p><strong>Sunlight</strong> is a next-generation neighborhood delivery and alert ecosystem designed to streamline daily doorstep services without friction, noise, or constant phone calls.</p>
+        
+        <div class="problem-statement">
+            <h3>The Problem We Are Solving</h3>
+            <p>Every single day, vendors visit neighborhoods delivering essential services—from fresh water cans and morning milk to tiffins, laundry, and daily groceries. To alert customers, vendors traditionally resort to honking horns, blasting loudspeakers, or repeatedly making phone calls while navigating through streets. This causes unwanted noise pollution, missed deliveries, and unnecessary hassles for both customers and vendors.</p>
+        </div>
+
+        <p><strong>Sunlight transforms this experience.</strong> With our smart real-time location triggers, digital subscriptions, and instant notifications, your local vendors can notify you seamlessly the exact moment they enter your street or arrive at your doorstep—quietly, accurately, and effortlessly.</p>
+
+        <h3>Services Ecosystem Supported by Sunlight</h3>
+        <div class="services-grid">
+            <div class="service-item">
+                <div class="service-icon">🍱</div>
+                <div class="service-title">Tiffin Services</div>
+                <p>Timely home-cooked meals with instant delivery status.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">🥛</div>
+                <div class="service-title">Milkmen & Dairy</div>
+                <p>Never miss your morning milk drop or quantity changes.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">💧</div>
+                <div class="service-title">Water Can Supply</div>
+                <p>Silent arrival notifications for heavy water jar deliveries.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">🧺</div>
+                <div class="service-title">Washerman & Laundry</div>
+                <p>Easy clothes pickup and drop-off coordination.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">🍎</div>
+                <div class="service-title">Fruits & Vegetables</div>
+                <p>Know instantly when fresh cart vendors are on your street.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">🍦</div>
+                <div class="service-title">Ice Cream & Treats</div>
+                <p>Street-level alerts right when your favorite cart arrives.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHILD SAFETY STANDARDS POLICY SECTION -->
+    <div class="card">
+        <h2>Child Safety Standards & Protection Policy</h2>
+        <p><strong>Sunlight</strong> enforces a strict zero-tolerance policy regarding Child Sexual Abuse Material (CSAM) and Child Sexual Abuse and Exploitation (CSAE). We are dedicated to providing a safe, compliant, and trustworthy ecosystem for all users.</p>
+
+        <div class="safety-section">
+            <h3>Prevention, Reporting & Compliance Standards</h3>
+            <ul>
+                <li><strong>Zero Tolerance & Immediate Suspension:</strong> Any account attempting to share, transmit, or promote abusive, harmful, or inappropriate content involving minors will face immediate account termination and permanent blocking.</li>
+                <li><strong>In-App Safety Mechanisms:</strong> Users can block or report inappropriate user-generated content, messages, or conduct directly within the application and via our support portal.</li>
+                <li><strong>Reporting to Legal Authorities:</strong> We fully comply with applicable national and international child safety laws. Identified violations involving CSAM/CSAE will be promptly reported to relevant law enforcement agencies and safety authorities.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CONTACT & HELP CENTER SECTION -->
+    <div class="card">
+        <h2>Contact Us & Help Center</h2>
+        <p>Whether you need app support, wish to request account/data deletion, or have business or vendor onboarding inquiries, please use our central contact portal below. All inquiries are reviewed promptly by our dedicated support team.</p>
+
+        <div class="btn-group">
+            <a class="btn btn-support" href="https://docs.google.com/forms/d/e/1FAIpQLSfTv-wE4-MKOD0hwz1aXsRkjP1K8dFDNaX4FsOP6gX5avukvQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">
+                🎧 App Support & Technical Help
+            </a>
+
+            <a class="btn btn-delete" href="https://docs.google.com/forms/d/e/1FAIpQLSfTv-wE4-MKOD0hwz1aXsRkjP1K8dFDNaX4FsOP6gX5avukvQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">
+                🗑️ Request Account & Data Deletion
+            </a>
+
+            <a class="btn btn-general" href="https://docs.google.com/forms/d/e/1FAIpQLSfTv-wE4-MKOD0hwz1aXsRkjP1K8dFDNaX4FsOP6gX5avukvQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">
+                🤝 Vendor & Business Partnership Inquiries
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 Sunlight. All rights reserved.
+</footer>
+
+</body>
+</html>
